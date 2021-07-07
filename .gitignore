@@ -50,3 +50,4 @@ wheels/
 .installed.cfg
 *.egg
 /gradient.png
+demo.py
