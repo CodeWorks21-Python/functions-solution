@@ -26,6 +26,17 @@
 
 print('The absolute value of -15 is:', abs(-15))
 
+hex_num = hex(21)
+print('The hexadecimal value of 21 is', hex_num)
+print('The id of a the variable hex_num is', id(hex_num))
+
+print('2 ^ 5 =', pow(2, 5))
+
+print('3.75123 rounded to the nearest integer is', round(3.75123))
+
+print('The length of my full name, Elia Lucia Deppe, is', len('Elia Lucia Deppe') - 2)  # subtract 2 because of spaces
+print()
+
 
 # --------------- Section 2 --------------- #
 
@@ -43,6 +54,23 @@ print('The absolute value of -15 is:', abs(-15))
 #   1 - Call each function once.
 #
 # WRITE CODE BELOW
+def print_name():
+    print('Elia')
+
+
+def print_animals():
+    print('Animals I like: Pangolin, Fox, and Otters')
+
+
+def print_odd_numbers():
+    print('Three odd numbers:')
+    print('5, 17, and 3423521')
+
+
+print_name()
+print_animals()
+print_odd_numbers()
+print()
 
 
 # 2 | Function Definitions with Parameters
@@ -71,3 +99,19 @@ print('The absolute value of -15 is:', abs(-15))
 #   2 - For the 3rd function, save the return value to a variable and print it.
 #
 # WRITE CODE BELOW
+def cube(num):
+    print(num, '^ 3 =', num ** 3)
+
+
+def sum_three(a, b, c):
+    print(a, '+', b, '+', c, '=', a + b + c)
+
+
+def duplicate_string(text):
+    return text * 5
+
+
+cube(15)
+sum_three(232, -324.213, 654.32)
+
+duplicated_text = duplicate_string('cats!')

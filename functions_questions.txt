@@ -3,39 +3,54 @@ Date:
 
 1 - What is the return value of the len() function?
 
+len(obj) returns the length of the object. This object must be an iterable (like a string).
 
 
 2 - What is the return value of the print() function?
 
+print() returns None.
 
 
 3 - Can a function be used in an operation or expression?
 
+Yes! Functions return a value so they can be used like a value!
+print(len('hello') + len('world!') is valid.
 
 
 4 - Are functions name case-sensitive?
 
+Yes. A function named get_num() is not the same as GET_NUM()
 
 
 5 - What are the 3 rules behind good names for variables and functions?
 
+- Clear      | Easy to read and understand.
+- Concise    | Short and simple.
+- Meaningful | The name should imply what value is being held.
 
 
 6 - What is the keyword used to define a function?
 
+def
 
 
 7 - What is name of the values used in a function call?
 
+Arguments
 
 
 8 - What is the name of the values used in a function definition?
 
+Parameters
 
 
 9 - Are parameters variables?
 
+Yes, they are a special type of variable
+
 
 10 - How do you return a value?
 
+With the return keyword.
+return value
 

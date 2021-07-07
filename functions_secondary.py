@@ -28,6 +28,24 @@
 #   10° celsius is 50° fahrenheit
 #
 # WRITE CODE BELOW
+def fahrenheit_to_celsius(fahrenheit):
+    celsius = (fahrenheit - 32) * (5 / 9)
+    return celsius
+
+
+def celsius_to_fahrenheit(celsius):
+    fahrenheit = (celsius * (9 / 5)) + 32
+    return fahrenheit
+
+
+og_temperature = 65  # this will be used as the original temperature in fahrenheit and celsisus
+
+temperature = fahrenheit_to_celsius(og_temperature)
+print(str(og_temperature) + '° Fahrenheit is ' + str(temperature) + '° Celsius')
+
+temperature = celsius_to_fahrenheit(og_temperature)
+print(str(og_temperature) + '° Celsius is ' + str(temperature) + '° Fahrenheit')
+print()
 
 
 # 2 | Celsius to Kelvin
@@ -51,6 +69,33 @@
 #   232° kelvin is -41.15° celsius
 #
 # WRITE CODE BELOW
+def celsius_to_kelvin(celsius):
+    kelvin = celsius + 273.15
+    return kelvin
+
+
+def kelvin_to_celsius(kelvin):
+    celsius = kelvin - 273.15
+    return celsius
+
+
+og_temperature = 52  # this will be used as the original temperature in fahrenheit and celsisus
+
+temperature = celsius_to_kelvin(og_temperature)
+print(str(og_temperature) + '° Celsius is ' + str(temperature) + '° Kelvin')
+
+temperature = kelvin_to_celsius(og_temperature)
+print(str(og_temperature) + '° Kelvin is ' + str(temperature) + '° Celsius')
+print()
 
 
 # Question: How could you use these functions to convert a temperature in fahrenheit to kelvin?
+
+# You can convert from fahrenheit to celsius, and then celsius to kelvin.
+
+og_temperature = 82  # this is in fahrenheit
+
+temperature = fahrenheit_to_celsius(og_temperature)    # convert fahrenheit to celsius
+temperature = celsius_to_kelvin(temperature)        # then convert celsius to kelvin
+
+print(str(og_temperature) + '° Fahrenheit is ' + str(temperature) + '° Kelvin')
